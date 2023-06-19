@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "NagelRegular";
+    src: url("../fonts/NagelRegular/NagelRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "NagelMedium";
+    src: url("../fonts/NagelMedium/NagelMedium.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "LiteraturnayaItalic";
+    src: url("../fonts/LiteraturnayaItalic/LiteraturnayaItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "LiteraturnayaBoldItalic";
+    src: url("../LiteraturnayaBoldItalic/LiteraturnayaBoldItalic.woff") format("woff");
+    font-style: italic;
+    font-weight: 800;
+}

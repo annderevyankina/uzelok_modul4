@@ -1,0 +1,175 @@
+/* ОБЩЕЕ */
+
+.container {
+  display: flex;
+  height: calc(100vh - 2.3vh);
+  font-family: 'NagelRegular';
+  font-size: 1vw;
+  font-size: 1.56vw;
+}
+a {
+  color: #FC6290;
+  text-decoration: none;
+  z-index: 1;
+}
+.icon img{
+  display: flex;
+  filter: blur(4px);
+  cursor: pointer;
+  transition: 1.5s;
+  height: 13.02vw;
+  width: 13.02vw;
+  margin: 0;
+  z-index: 3;
+}
+.icon img:hover {
+  filter: blur(0px);
+  transition: 1.5s;
+}
+.loading, .contacts {
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left:0;
+  background: #FFFCF1;
+  opacity: 0;
+  z-index: 4;
+}
+.bubbles {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100vh;
+  z-index: 2;
+}
+.bubbles>div {
+  border-radius: 50%;
+  filter: blur(4px);
+  position: absolute;
+}
+.nav {
+  width: 24vw;
+  height: 2.3vh;
+  font-family: 'NagelMedium';
+  font-size: 1.25vw;
+  background: pink;
+  margin: 0 auto;
+}
+.icon {
+  display: flex;
+  height: 16vw;
+  width: 20vw;
+  position: absolute;
+}
+
+/* ГЛАВНАЯ */
+.mainpage {
+  background: url(../images/backmain4.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+h1 {
+  font-family: 'LiteraturnayaItalic';
+  font-size: 4.43vw;
+  line-height: 4.43vw;
+  width: 40.25vw;
+  position: absolute;
+  top: 4.7vw;
+  left: 56.25vw;
+  color: black;
+  z-index: 4;
+
+}
+.n6~h1{
+  top: 47.6vw;
+  left: 24.5vw;
+}
+.n1 {
+  top: 11vw;
+  left: 14.3vw;
+}
+.n1 a {
+  padding-top: 3vw;
+  padding-left: 1vw;
+}
+.n2 {
+  top: 29vw;
+  left: 12.3vw;
+}
+.n2 a {
+  position: absolute;
+  top: 14vw;
+  left: 5.5vw;
+}
+.n3 {
+  top: 22vw;
+  left: 32.3vw;
+}
+.n3 a {
+  padding-top: 2vw;
+  padding-left: 0.7vw;
+}
+.n4 {
+  top: 29vw;
+  left: 45.8vw;
+}
+.n4 a {
+  padding-top: 4.7vw;
+  padding-left: 1.2vw;
+}
+.n5 {
+  top: 17vw;
+  left: 60.3vw;
+}
+.n5 a {
+  padding-top: 5.7vw;
+  padding-left: 1.2vw;
+}
+.n6 {
+  top: 21vw;
+  left: 83.3vw;
+  width: 13.02vw;
+}
+.n6 a {
+  position: absolute;
+  top: 14.2vw;
+  left: 5.8vw;
+}
+.bubble_1, .bubble_2, .bubble_4 {
+  background-color: #FF82A7;
+}
+.bubble_3, .bubble_5, .bubble_6 {
+  background-color: #66A3FF;
+  top: 44vw;
+  left: 82vw;
+}
+.bubble_1, .bubble_5, .bubble_6 {
+  height: 8vw;
+  width: 8vw;
+  top: 11vw;
+  left: 89vw;
+}
+.bubble_2, .bubble_3, .bubble_4 {
+  height: 5.21vw;
+  width: 5.21vw;
+}
+.bubble_2 {
+  top: 16vw;
+  left: 48vw;
+}
+.bubble_4 {
+  top: 36vw;
+  left: 30vw;
+}
+.bubble_5 {
+  top: 4vw;
+  left: 7vw;
+}
+.bubble_6 {
+  top: 33vw;
+  left: 69vw;
+}
