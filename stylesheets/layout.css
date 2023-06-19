@@ -2,15 +2,34 @@
 
 .container {
   display: flex;
-  height: calc(100vh - 2.3vh);
+  height: 100vh;
   font-family: 'NagelRegular';
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+p {
+  font-size: 1.25vw;
+  line-height: 1.46vw;
+  position: absolute;
+}
+h3 {
   font-size: 1vw;
   font-size: 1.56vw;
-}
-a {
   color: #FC6290;
-  text-decoration: none;
   z-index: 1;
+  position: absolute;
+}
+h4 {
+  font-size: 2.08vw;
+  line-height: 2.24vw;
+  color: white;
+  position: absolute;
+  z-index: 5;
+}
+span {
+  font-family: 'LiteraturnayaBoldItalic';
+  font-size: 1.35vw;
+  color: black;
 }
 .icon img{
   display: flex;
@@ -49,19 +68,26 @@ a {
   filter: blur(4px);
   position: absolute;
 }
-.nav {
-  width: 24vw;
+.nav, .section {
   height: 2.3vh;
   font-family: 'NagelMedium';
   font-size: 1.25vw;
-  background: pink;
-  margin: 0 auto;
+  position: absolute;
+  z-index: 4;
+}
+.nav {
+  top: 53vw;
+  left: 40vw;
 }
 .icon {
   display: flex;
   height: 16vw;
-  width: 20vw;
+  width: 27vw;
   position: absolute;
+}
+.op {
+  opacity: 0;
+  transition: 1s;
 }
 
 /* ГЛАВНАЯ */
@@ -69,8 +95,6 @@ a {
   background: url(../images/backmain4.png);
   background-position: center;
   background-size: cover;
-  height: 100vh;
-
 }
 h1 {
   font-family: 'LiteraturnayaItalic';
@@ -92,16 +116,15 @@ h1 {
   top: 11vw;
   left: 14.3vw;
 }
-.n1 a {
-  padding-top: 3vw;
-  padding-left: 1vw;
+.n1 h3 {
+  top: 3vw;
+  left: 14vw;
 }
 .n2 {
   top: 29vw;
   left: 12.3vw;
 }
-.n2 a {
-  position: absolute;
+.n2 h3 {
   top: 14vw;
   left: 5.5vw;
 }
@@ -109,35 +132,47 @@ h1 {
   top: 22vw;
   left: 32.3vw;
 }
-.n3 a {
-  padding-top: 2vw;
-  padding-left: 0.7vw;
+.n3 h3 {
+  top: 2vw;
+  left: 13.7vw;
 }
 .n4 {
   top: 29vw;
   left: 45.8vw;
 }
-.n4 a {
-  padding-top: 4.7vw;
-  padding-left: 1.2vw;
+.n4 h3 {
+  top: 4.7vw;
+  left: 14.2vw;
 }
 .n5 {
   top: 17vw;
   left: 60.3vw;
 }
-.n5 a {
-  padding-top: 5.7vw;
-  padding-left: 1.2vw;
+.n5 h3 {
+  top: 5.7vw;
+  left: 14.2vw;
 }
 .n6 {
   top: 21vw;
   left: 83.3vw;
   width: 13.02vw;
 }
-.n6 a {
-  position: absolute;
+.n6 h3 {
   top: 14.2vw;
   left: 5.8vw;
+}
+.description {
+  width: 21.61vw;
+  height: 6.25vw;
+  z-index: 1;
+  position: absolute;
+  top: 39.72vw;
+  left: 26.5vw;
+  transition: 1s;
+  /* display: none; */
+}
+a:hover .description{
+  display: block;
 }
 .bubble_1, .bubble_2, .bubble_4 {
   background-color: #FF82A7;
@@ -172,4 +207,79 @@ h1 {
 .bubble_6 {
   top: 33vw;
   left: 69vw;
+}
+
+/* О НАС */
+.about {
+  background: url(../images/backabout.png);
+  background-position: center;
+  background-size: cover;
+}
+.section {
+  top: 2vw;
+  left: 50vw;
+}
+.about h3{
+  color: #66A3FF;
+}
+.about .n1 {
+  top: 24vw;
+  left: 10vw;
+}
+.about .n1 h3 {
+  top: 14vw;
+  left: 8vw;
+}
+.about .n2 {
+  top: 24vw;
+  left: 40vw;
+}
+.about .n2 h3 {
+  top: 7.5vw;
+  left: 14vw;
+}
+.about .n3 {
+  top: 2.5vw;
+  left: 72vw;
+}
+.about .n3 h3 {
+  top: 6.5vw;
+  left: 14.2vw;
+}
+.info {
+  width: 26.09vw;
+  height: 35.94vw;
+  position: absolute;
+  top: 16.15vw;
+  left: 73.91vw;
+  z-index: 4;
+}
+.n1 + p {
+  top: 41vw;
+  left: 18vw;
+}
+.n2 + p {
+  top: 11.46vw;
+  left: 47.76vw;
+}
+p + p {
+  top: 18.46vw;
+  left: 47.76vw;
+}
+.about .bubble_1, .bubble_5, .bubble_6 {
+display: none;
+}
+.about .bubble_3 {
+  background-color: #FF82A7;
+}
+.info + h4 {
+  left: 80.11vw;
+  top: 23.85vw;
+}
+h4~p {
+  color: white;
+  position: absolute;
+  z-index: 5;
+  top: 30vw;
+  left: 80vw;
 }

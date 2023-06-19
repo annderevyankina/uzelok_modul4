@@ -18,7 +18,7 @@
 }
 @font-face {
     font-family: "LiteraturnayaBoldItalic";
-    src: url("../LiteraturnayaBoldItalic/LiteraturnayaBoldItalic.woff") format("woff");
+    src: url("../fonts/LiteraturnayaBoldItalic/LiteraturnayaBoldItalic.woff") format("woff");
     font-style: italic;
-    font-weight: 800;
+    font-weight: 600;
 }
