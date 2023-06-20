@@ -63,6 +63,7 @@ span {
   top: 0;
   left:0;
   height: 100vh;
+  /* width: 100vw; */
   z-index: 2;
 }
 .bubbles>div {
@@ -118,11 +119,12 @@ h1 {
   z-index: 4;
 
 }
-.n6~h1{
+.n6 + h1{
   top: 47.6vw;
   left: 24.5vw;
 }
 .n1 {
+  position: relative;
   top: 11vw;
   left: 14.3vw;
 }
@@ -174,15 +176,18 @@ h1 {
 .description {
   width: 21.61vw;
   height: 6.25vw;
-  z-index: 1;
+  z-index: ;
   position: absolute;
+
+  transition: 1s;
+  visibility: hidden;
+}
+.n1:hover .d1{
+  visibility: visible;
   top: 39.72vw;
   left: 26.5vw;
-  transition: 1s;
-  /* display: none; */
-}
-a:hover .description{
-  display: block;
+  /* display: block; */
+  /* opacity: 1; */
 }
 .bubble_1, .bubble_2, .bubble_4 {
   background-color: #FF82A7;
@@ -276,12 +281,7 @@ p + p {
   top: 18.46vw;
   left: 47.76vw;
 }
-.about .bubble_1, .bubble_5, .bubble_6 {
-display: none;
-}
-.about .bubble_3 {
-  background-color: #FF82A7;
-}
+
 .info + h4 {
   left: 80.11vw;
   top: 23.85vw;
