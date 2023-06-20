@@ -81,6 +81,10 @@ span {
   top: 53vw;
   left: 40vw;
 }
+.nav a {
+  text-decoration: none;
+  color: black;
+}
 .icon {
   display: flex;
   height: 16vw;
