@@ -30,7 +30,9 @@ span {
   font-family: 'LiteraturnayaBoldItalic';
   font-size: 1.35vw;
   color: black;
+  z-index: 4;
 }
+
 .icon img{
   display: flex;
   filter: blur(4px);
@@ -87,13 +89,17 @@ span {
 }
 .op {
   opacity: 0;
-  transition: 1s;
+  /* transition: 3s; */
+  animation: showBlock 1s linear forwards;
+  animation-play-state: paused;
 }
-
+.none {
+  display: none;
+}
 /* ГЛАВНАЯ */
 .mainpage {
   background: url(../images/backmain4.png);
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 h1 {
@@ -212,7 +218,7 @@ a:hover .description{
 /* О НАС */
 .about {
   background: url(../images/backabout.png);
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 .section {
@@ -252,7 +258,7 @@ a:hover .description{
   position: absolute;
   top: 16.15vw;
   left: 73.91vw;
-  z-index: 4;
+  z-index: 5;
 }
 .n1 + p {
   top: 41vw;
@@ -282,4 +288,112 @@ h4~p {
   z-index: 5;
   top: 30vw;
   left: 80vw;
+}
+
+/* СОБЫТИЯ */
+.events {
+  background: url(../images/backevents.png);
+  background-position: top;
+  background-size: cover;
+}
+.events .n1 {
+  top: 30vw;
+  left: 4.3vw;
+}
+.events .n2 {
+  top: 17vw;
+  left: 22.3vw;
+}
+.events .n3 {
+  top: 24vw;
+  left: 38.3vw;
+}
+.events .n4 {
+  top: 12vw;
+  left: 64.8vw;
+}
+.events .n2 h3 {
+  top: -2vw;
+  left: 12vw;
+}
+.events .n3 h3 {
+  top: 5.5vw;
+  left: 14.7vw;
+}
+.events .n4 h3 {
+  top: -3.3vw;
+  left: 9.2vw;
+}
+.more {
+  height: 8.07vw;
+  width: 8.07vw;
+  filter: blur(4px);
+  z-index: 3;
+  background-color: #66A3FF;
+  border-radius: 50%;
+  position: absolute;
+  top: 24.06vw;
+  left:89.84vw;
+  cursor: pointer;
+
+}
+.events span {
+  color: white;
+  position: absolute;
+  top: 27.4vw;
+  left: 92.4vw;
+}
+.more + a {
+  text-decoration: none;
+}
+.n3 + p {
+  top: 40.94vw;
+  left: 50.83vw;
+}
+.detail {
+  width: 13.44vw;
+  height: 29.38vw;
+  z-index: 5;
+  position: absolute;
+  top: 19.58vw;
+  left: 83.80vw;
+
+}
+.detail p {
+  padding-top: 1vw;
+  color: white;
+}
+.detail h4 {
+  padding-top: 5vw;
+}
+.detail a {
+  display: block;
+  padding-top: 1vw;
+  font-family: 'LiteraturnayaItalic';
+  font-size: 1.35vw;
+  padding-top: 7.5vw;
+  color: white;
+}
+.details {
+  z-index: 5;
+  opacity: 0;
+  animation: showBlock 1.2s linear forwards;
+  animation-play-state: paused;
+}
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  25% {
+    opacity: .65;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+
+  }
 }
