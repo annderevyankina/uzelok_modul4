@@ -784,3 +784,39 @@ h6 + p {
 p + h6 {
   padding-top: 3.91vw;
 }
+
+/* 404 */
+body {
+  background: url(../images/er404.png);
+  background-position: top;
+  background-size: cover;
+}
+h7 {
+  font-family: 'LiteraturnayaItalic';
+  font-size: 16.09vw;
+  color: #FF82A8;
+  filter: blur(4px);
+  position: absolute;
+  top: 9.11vw;
+  left: 18.13vw;
+}
+h8 {
+  font-family: 'NagelMedium';
+  font-size: 2.08vw;
+  color: #FF82A8;
+  position: absolute;
+  top: 27.34vw;
+  left: 18.13vw;
+}
+.bot {
+  margin: 28.13vw 0 0 66.82vw;
+}
+.bot + a {
+  font-family: 'LiteraturnayaBoldItalic';
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 33.70vw;
+  left: 69.11vw;
+  font-size: 1.56vw;
+}
