@@ -764,5 +764,23 @@ h5 {
 
 /* КОНТАКТЫ */
 .information {
-  margin: 0 auto;
+  margin: 18.65vw 36.51vw;
+  display: inline-block;
+  text-align: center;
+
+}
+h6 {
+  font-family: 'NagelRegular';
+  font-size: 1.56vw;
+  color: #FC6290;
+}
+h6 + p {
+  font-family: 'LiteraturnayaBoldItalic';
+  font-size: 1.35vw;
+  line-height: 1.93vw;
+  padding-top: 2.08vw;
+  position: relative;
+}
+p + h6 {
+  padding-top: 3.91vw;
 }
