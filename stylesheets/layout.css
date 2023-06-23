@@ -778,10 +778,14 @@ p + h6 {
   background-position: top;
   background-size: cover;
 }
-.bot {
-  margin: 28.13vw 0 0 66.82vw;
+.for404 .ellipse {
+  height: 13.02vw;
+  width: 13.02vw;
+  background-color: #FF82A7;
+  border-radius: 50%;
+  margin: 28.2vw 0 0 67.3vw;
 }
-.bot + a {
+.for404 a {
   font-family: 'LiteraturnayaBoldItalic';
   text-decoration: none;
   color: white;
@@ -873,12 +877,8 @@ button + p {
   margin: -7.3vw 0 0 51.9vw;
 }
 .ellipse {
-  width: 2.60vw;
-  height: 2.60vw;
   background-color: #66A3FF;
-  border-radius: 50%;
-  margin: 33.75vw 0 0 72.45vw;
-  animation: scaleBlock .5s linear forwards;
+  animation: scaleBlock 1s linear forwards;
   animation-play-state: paused;
 }
 
