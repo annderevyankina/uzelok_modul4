@@ -143,18 +143,6 @@ span {
   opacity: 1;
 }
 
-@keyframes hidePreloader {
-    0% {
-        opacity: 1;
-    }
-    95% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 /* ГЛАВНАЯ */
 .mainpage {
   background: url(../images/backmain4.png);
@@ -820,6 +808,8 @@ p + h6 {
   background-color: #FF82A7;
   border-radius: 50%;
   margin: 28.2vw 0 0 67.3vw;
+  filter: blur(4px);
+
 }
 .for404 a {
   font-family: 'LiteraturnayaBoldItalic';
@@ -912,10 +902,15 @@ button + p {
   color: white;
   margin: -7.3vw 0 0 51.9vw;
 }
-.ellipse {
+.send .ellipse {
   background-color: #66A3FF;
   animation: scaleBlock 1s linear forwards;
   animation-play-state: paused;
+  height: 13.02vw;
+  width: 13.02vw;
+  border-radius: 50%;
+  margin: 28.2vw 0 0 67.3vw;
+  filter: blur(4px);
 }
 
 /* АНИМАЦИИ */
@@ -960,4 +955,15 @@ button + p {
     opacity: .95;
     filter: blur(0px);
   }
+}
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
