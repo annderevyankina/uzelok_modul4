@@ -62,7 +62,7 @@ span {
   filter: blur(0px);
   transition: 1.5s;
 }
-.loading, .contacts {
+.contacts {
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -117,6 +117,42 @@ span {
 }
 .blur {
   filter: blur(4px);
+}
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFCF1;
+  opacity: .9;
+  z-index: 7;
+}
+#preloader.hide-preloader {
+  animation: hidePreloader 3s;
+}
+#preloader.preloader-hidden {
+  display: none;
+}
+#preloader img {
+  width: 12vw;
+  height: 8.15vw
+  opacity: 1;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 /* ГЛАВНАЯ */
