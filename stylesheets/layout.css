@@ -25,6 +25,23 @@ h4 {
   position: absolute;
   z-index: 5;
 }
+h7 {
+  font-family: 'LiteraturnayaItalic';
+  font-size: 16.09vw;
+  color: #FF82A8;
+  filter: blur(4px);
+  position: absolute;
+  top: 9.11vw;
+  left: 18.13vw;
+}
+h8 {
+  font-family: 'NagelMedium';
+  font-size: 2.08vw;
+  color: #FF82A8;
+  position: absolute;
+  top: 27.34vw;
+  left: 18.13vw;
+}
 span {
   font-family: 'LiteraturnayaBoldItalic';
   font-size: 1.35vw;
@@ -80,6 +97,7 @@ span {
 .nav {
   top: 53vw;
   left: 40vw;
+  cursor: pointer;
 }
 .nav a {
   text-decoration: none;
@@ -380,38 +398,6 @@ h4~p {
   animation: showBlock 1.2s linear forwards;
   animation-play-state: paused;
 }
-@keyframes showBlock {
-  0% {
-    opacity: 0;
-    filter: blur(4px);
-  }
-  25% {
-    opacity: .65;
-  }
-  50% {
-    opacity: .7;
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
-@keyframes showBlock_2 {
-  0% {
-    opacity: 0;
-    filter: blur(4px);
-  }
-  25% {
-    opacity: .6;
-  }
-  50% {
-    opacity: .65;
-  }
-  100% {
-    opacity: .95;
-    filter: blur(0px);
-  }
-}
 .eventsmore {
   background: url(../images/backevents2.png);
   background-position: top;
@@ -603,6 +589,7 @@ h4~p {
   transition: 1.5s;
   border-radius: 50%;
   filter: blur(4px);
+  z-index: 4;
 }
 .round:hover {
   filter: blur(0px);
@@ -786,27 +773,10 @@ p + h6 {
 }
 
 /* 404 */
-body {
+.for404 {
   background: url(../images/er404.png);
   background-position: top;
   background-size: cover;
-}
-h7 {
-  font-family: 'LiteraturnayaItalic';
-  font-size: 16.09vw;
-  color: #FF82A8;
-  filter: blur(4px);
-  position: absolute;
-  top: 9.11vw;
-  left: 18.13vw;
-}
-h8 {
-  font-family: 'NagelMedium';
-  font-size: 2.08vw;
-  color: #FF82A8;
-  position: absolute;
-  top: 27.34vw;
-  left: 18.13vw;
 }
 .bot {
   margin: 28.13vw 0 0 66.82vw;
@@ -816,7 +786,142 @@ h8 {
   text-decoration: none;
   color: white;
   position: absolute;
-  top: 33.70vw;
-  left: 69.11vw;
+  top: 34vw;
+  left: 69.5vw;
   font-size: 1.56vw;
+}
+
+/* ЗАПИСЬ */
+.booking {
+  background: url(../images/backbooking.png);
+  background-position: top;
+  background-size: cover;
+}
+form {
+  width: 40vw;
+  margin: 18.39vw 0 0 18.13vw;
+}
+.name,
+.telephone,
+.submit a,
+.radio
+ {
+  width: 14.8vw;
+  height: 4.38vw;
+  display: inline-block;
+}
+
+.input [type="tel"],
+.input [type="email"],
+.input [type="text"] {
+  display: inline-block;
+  width: 14.6vw;
+  font-family: 'NagelRegular';
+  font-size: 1.56vw;
+  border: none;
+  background: none;
+  padding-bottom: .7vw;
+
+}
+input::placeholder {
+  color: #66A3FF;
+}
+.radio p, label {
+  font-family: 'NagelRegular';
+  font-size: 1.25vw;
+  line-height: 1.46vw;
+}
+.booking h8 {
+  color: #66A3FF;
+  top: 8.02vw
+}
+.submit {
+  padding-top: 4.06vw;
+
+}
+.submit > div{
+  display: inline-block;
+}
+a + div {
+}
+.radio {
+  padding-top: 2.06vw;
+}
+.submit a {
+  font-family: 'LiteraturnayaBoldItalic';
+  font-size: 1.35vw;
+  color: black;
+  width: 14.6vw;
+  height: 1.35vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  height: 13.02vw;
+  width: 13.02vw;
+  border-radius: 50%;
+  border: none;
+  background-color: #66A3FF;
+  filter: blur(4px);
+  margin: -4vw 0 0 50vw;
+  cursor: pointer;
+}
+button + p {
+  font-family: 'LiteraturnayaBoldItalic';
+  font-size: 1.56vw;
+  color: white;
+  margin: -7.3vw 0 0 51.9vw;
+}
+.ellipse {
+  width: 2.60vw;
+  height: 2.60vw;
+  background-color: #66A3FF;
+  border-radius: 50%;
+  margin: 33.75vw 0 0 72.45vw;
+  animation: scaleBlock .5s linear forwards;
+  animation-play-state: paused;
+}
+
+/* АНИМАЦИИ */
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  25% {
+    opacity: .65;
+  }
+  50% {
+    opacity: .7;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes scaleBlock {
+  0% {
+    transform: scale(1.0);
+    filter: blur(4px);
+  }
+  100% {
+    transform: scale(0.3);
+    filter: blur(0px);
+  }
+}
+@keyframes showBlock_2 {
+  0% {
+
+    filter: blur(4px);
+  }
+  25% {
+    opacity: .6;
+  }
+  50% {
+    opacity: .65;
+  }
+  100% {
+    opacity: .95;
+    filter: blur(0px);
+  }
 }

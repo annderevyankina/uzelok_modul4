@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Запись в Центр хранения памяти</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <script src="javascripts/jquery-3.6.4.min.js" charset="utf-8"></script>
+    <script src="javascripts/bubbles.js" charset="utf-8"></script>
+    <script src="javascripts/booking.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container booking">
+      <h8>Запишитесь на сохранение <br>
+        воспоминаний или купите <br>
+        подписку для их просмотра</h8>
+      <form class="" action="bookingsend.html" method="post">
+        <div class="input">
+          <div class="name">
+            <input type="text" name="name" value="" placeholder="Имя">
+            <input type="text" name="surname" value="" placeholder="Фамилия">
+          </div>
+          <div class="telephone">
+            <input type="email" name="email" value="" placeholder="Электронная почта">
+            <input type="tel" name="telephone" value="" placeholder="Номер телефона">
+          </div>
+        </div>
+        <div class="submit">
+          <a href="services.html">Выбрать услугу</a>
+          <div>
+            <p>Подтверждение номера</p>
+            <div class="radio">
+              <div class="">
+                <input type="radio" name="submit" value="">
+                <label for="">SMS</label>
+              </div>
+              <div class="">
+                <input type="radio" name="submit" value="">
+                <label for="">Звонок</label>
+              </div>
+            </div>
+          </div>
 
+        </div>
+        <button type="submit" name="button">Записаться</button>
+        <p>Записаться</p>
+      </form>
+    </div>
+  </body>
+</html>
